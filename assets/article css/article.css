@@ -1,0 +1,39 @@
+article {
+    padding: 0.5in 0;
+    display: grid;
+    
+    grid-template-columns: 1fr 0.5in [start] 1.25in 5in 1.25in [end] 0.5in 1fr;
+    
+    
+}
+article * {grid-column: start / end;}
+@media (max-width: 8.5in) {
+    article {grid-template-columns: 1fr 5% [start] 15% 60% 15% [end] 5% 1fr;}
+}
+
+.main {
+    background-color: antiquewhite;
+    background:linear-gradient(hsl(55, 78%, 69%), rgb(247, 234, 234) 9rem);
+}
+
+.main-2 {
+    background-color: antiquewhite;
+    background:linear-gradient(hsl(55, 78%, 69%), rgb(247, 234, 234) 5rem);
+}
+
+.qcontainer {
+    border: solid;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 1rem;
+   
+}
+
+
+.qcontainer , .qp{
+    margin: 0.5rem;
+   padding-left: 1.2rem;
+   padding-right: 0.5rem;
+}
+
